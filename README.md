@@ -21,14 +21,34 @@ Each participant file contains two arrays:
 - The data was segmented into 60 second trials and a 3 second pre-trial baseline removed.
 - The trials were reordered from presentation order to video (Experiment_id) order.
 
-**Due to Github's policies, which not allow file uploads of more than 100MB, a copy of the data used can be downloaded via [this link]().**
+**Due to Github's policies, which do not allow file uploads of more than 100MB, a copy of the data used can be downloaded via [this link](https://drive.google.com/file/d/1cBV6at_F2mPWIXKnRT1AQKSySZX7bnT3/view?usp=drive_link).**
 
 ## Literature Review
 
+[2] and [3] are the main sources the literature review is based upon. Both disscussed the state-of-art methods for Emotion Recongiiton usign EEG signals, as well as, associated challanges ,and pontetial applications.
 
+The presented methods on those papers suggested a strong correlation between the approaches which combine the spatial and temporal components of EEG signals and the metrices of accuracy, precision, etc. Only the methods which utilized DEAP dataset were collected and analyzed. As presented on the following table:
+
+| Method                                       | Accuracy          |
+|---------------------------------------------|-------------------|
+| **CNN-5 with PLV matrices**             | 99.73% (4-class), 99.11% (2-class), 99.74% (2-class arousal)  |
+| **CNN-LSTM** | 97.41% (valence), 97.39% (arousal), 97.68% (dominance)  |
+| **ECNN-C**               | 98.35% (valence), 98.51% (arousal), 98.55% (dominance) |
+| **Multi-column CNN**         | 90.01% (valence), 90.65% (arousal)   |
+| **LSTM + Attention + CNN** | 90.1% (2-class valence), 88.3% (2-class arousal), 86.95% (3-class valence), 84.1% (3-class arousal)|
+| **2D-CNN with soft attention + ConvLSTM**   | 87.84% (valence), 87.69% (arousal)   |
+| **Hierarchical LSTM**   | 85.9%   |
+| **LSTM**      | 81.1% (valence), 74.38% (arousal)  |
+
+Exisiting challanges comprises of associated computational cost, and the nature of EEG which are not identical accross individuals for a specific reaction (e.g. arousal, valence, etc), thus introducing the over-fitting.
 
 ## Suggested Methods
 
+Currently, three approaches are considered which aim to reduce the computational cost while mainting a reliable model in terms of accuracy to fit within a specific applications such as embedded real-time emotion recognition which utilize low-energy low-specs components. The suggested approaches are as follow:
+
+-
+-
+-
 
 ## References
 
