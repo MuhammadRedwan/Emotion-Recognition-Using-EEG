@@ -13,6 +13,10 @@ Each participant file contains two arrays:
 | data       | 40 x 40 x 8064 | video/trial x channel x data |
 | labels      | 40 x 4        | video/trial x label (valence, arousal, dominance, liking) |
 
+> *data*: 32 Participant x 40 Trials (63 secs each with first 3 secs removed) x 40 Data rows (including 32 EEG channels + 8 irrelevant channels) x 8064 (Timeseries data downsampled to 128 Hz amd EOG-filtered with bandpass filter of (4-45 Hz) average to common reference)
+
+> *lables*: 32 Participant x 40 Trials x 4 Ratings (Valence,Arousal,Dominance,Liking)
+
 
 - The data was downsampled to 128Hz.
 - A bandpass frequency filter from 4.0-45.0Hz was applied.
@@ -40,7 +44,7 @@ The presented methods on those papers suggested a strong correlation between the
 | **Hierarchical LSTM**   | 85.9%   |
 | **LSTM**      | 81.1% (valence), 74.38% (arousal)  |
 
-Exisiting challanges comprises of associated computational cost, and the nature of EEG which are not identical accross individuals for a specific reaction (e.g. arousal, valence, etc), thus introducing the over-fitting.
+Exisiting challanges comprises of associated computational cost, and the nature of EEG signals which are not identical accross individuals for a specific reaction (e.g. arousal, valence, etc), thus introducing the over-fitting as a consequence.
 
 ## Suggested Methods
 
