@@ -1,5 +1,9 @@
 # Emotion-Recognition-Using-EEG
 
+# Compatability
+
+This code uses Python version 3.9.0.
+
 ## Disclousre
 
 This code uses [DEAP dataset](https://www.eecs.qmul.ac.uk/mmv/datasets/deap/) [1], specifically data_preprocessed_python.zip file. 
